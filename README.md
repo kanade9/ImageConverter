@@ -22,7 +22,7 @@ Pythonの画像処理の入門として作ったもの。
 ![img](https://github.com/kzmaro/ImageConverter/blob/images/girl.png)
 ![img](https://github.com/kzmaro/ImageConverter/blob/images/sakura.png)
 
-## GBstudioへの適応方法
+## GBstudioへの適用方法
 適するサイズの画像を用意して変換しても上の右の図のように正しく表示されません。（この画像コワイ、、、）   
 これはメモリリークしてるからだと思われます。GBstudioは実機でのプレイができるようになっているため、メモリなども実機の容量を再現してるからでしょう。   
 この問題を解決するためには画像をあらくすればいいです。
