@@ -84,7 +84,7 @@ else:
     print('Please input exact alphabet')
     exit(0)
 
-# 元画像読み込み jpgで読み込めないときはjpgで読み込む処理
+# 元画像読み込み jpgで読み込めないときはjpegで読み込む処理
 
 try:
     baseImg = Image.open(adr)
