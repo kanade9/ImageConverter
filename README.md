@@ -4,7 +4,7 @@
 Pythonの画像処理の入門として作ったもの。   
 入力した画像(PNG,JPG)を[GBstudio](https://www.gbstudio.dev/)で扱える4色の色に変換するアプリケーション。
 
-## 〜Requriremnets〜
+## 〜Requrirements〜
 ```
 Pillow (6.0.0)
 ```
