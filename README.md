@@ -2,7 +2,9 @@
 
 ## 〜Summary〜
 Pythonの画像処理の入門として作ったもの。   
-入力した画像(PNG,JPG)を[GBstudio](https://www.gbstudio.dev/)で扱える4色の色に変換するアプリケーション。   
+入力した画像(PNG,JPG)を[GBstudio](https://www.gbstudio.dev/)で扱える4色の色に変換するアプリケーション。
+
+![top](pic/top.png)
 
 ## ~Usage~
 .pyファイルを実行します。3つの質問に答えることで目的の画像を出力することができます。  
@@ -17,7 +19,3 @@ Pythonの画像処理の入門として作ったもの。
 3.  PNGかJPGファイルかを選択します。
 
 4. ファイルが出力されます！。
-
-
-参考サイト
-[programmeur aihser](https://www11.atwiki.jp/reshia/pages/21.html)
