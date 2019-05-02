@@ -6,6 +6,7 @@ Pythonの画像処理の入門として作ったもの。
 
 ## 〜Requrirements〜
 ```
+Python 3.7
 Pillow (6.0.0)
 ```
 ## 〜Usage〜
