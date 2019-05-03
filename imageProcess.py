@@ -60,7 +60,7 @@ if N < 1 or N > 5:
     print('Please input exact number')
     exit(0)
 
-print('input your image file pass below ')
+print('input your image file path below ')
 warnings.warn('don\'t include extension! please input like \"user/xxxx/image\"')
 adr = str(input())
 
@@ -114,16 +114,19 @@ convertImg = Image.new('RGB', (width, height))
 for y in range(height):
     for x in range(width):
 
-        RGB_array = baseImg.getpixel((x, y))
         # getpixel(x,y)は左上を原点として列：x、行、yとしてカウントする。
         # RGB_arrayには（R,G,B）の三要素を持つ配列が入る。
 
+        RGB_array = baseImg.getpixel((x, y))
+
         # print(RGB_array[0])
-        # 画像によっては3要素の配列ではなく1要素になることがあり、エラーが発生することがある。(カラー画像においても)なぜ？→この問題は修正中
+        # 画像によっては3要素の配列ではなく1要素になることがあり、エラーが発生することがある。(カラー画像においても)なぜ？
+        # →int型に計算値を直すことで対応、今のところ不具合はなし。(2019.05.03)
 
         gray = int((process(RGB_array[0], RGB_array[1], RGB_array[2])))
 
         # green mode ならグレースケールの値を4値化する
+
         if M == 1:
             if gray < 64:
                 convertImg.putpixel((x, y), (7, 24, 33))  # #e0f8cf
